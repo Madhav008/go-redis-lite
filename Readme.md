@@ -43,17 +43,18 @@ Tested on: `Intel i5-8300H`, Go 1.22, Windows/Linux
 #### 🔹 `inmemcache` (without RWMutex):
 
 ```
-Set:      515.3 ns/op
-Get:      296.2 ns/op
-Update:   319.3 ns/op
+BenchmarkSet-8     2221554      515.3 ns/op     222 B/op    4 allocs/op
+BenchmarkGet-8     4211239      335.7 ns/op      23 B/op    1 allocs/op
+BenchmarkUpdate-8  4299273      319.3 ns/op      23 B/op    1 allocs/op
+
 ```
 
 #### 🔸 `rw_memcache` (with RWMutex):
 
 ```
-Set:      520.2 ns/op
-Get:      296.2 ns/op ✅
-Update:   328.0 ns/op
+BenchmarkSet-8     2216912      520.2 ns/op     222 B/op    4 allocs/op
+BenchmarkGet-8     4372797      296.2 ns/op      23 B/op    1 allocs/op ✅
+BenchmarkUpdate-8  3985664      328.0 ns/op      23 B/op    1 allocs/op
 ```
 
 ✅ **RWMutex showed ~11% improvement on Get() performance**, ideal for read-heavy use cases!
