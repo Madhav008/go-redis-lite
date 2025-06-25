@@ -83,15 +83,3 @@ Update:   328.0 ns/op
     
 - Extend with pluggable backends (Redis, Memcached, etc.)
     
-
----
-
-### 📂 Repo (Coming Soon)
-
-Publishing this soon on GitHub with clean structure and benchmark results. Want early access or want to contribute? Let me know! 👇
-
----
-
-If you're exploring **system design**, **Go microservices**, or **high-performance in-memory caching**, I’d love to connect and chat more.
-
-#golang #redis #microservices #opensource #performance #programming #systemdesign #backend #concurrency #devprojects
